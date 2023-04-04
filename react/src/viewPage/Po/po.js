@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import  "./po.css";
 import Base from "../Base/Base.js";
+import CartaSmith from "../../assets/CartaSmith.jpg";
 
 
 const Home = () =>{
@@ -66,6 +67,11 @@ const Entradas = () => {
                             </div>
                         </div>
                     </nav>
+                </div>
+
+                <div>
+
+                    <img src={CartaSmith} />
                 </div>
             </Base>
             
