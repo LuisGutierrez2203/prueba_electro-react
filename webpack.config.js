@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtracPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const htmlwebpack = new HtmlWebpackPlugin({
     template: "./react/src/index.html",
@@ -23,9 +24,6 @@ module.exports = {
         path: path.resolve(__dirname, './public')
     },
 
-    optimization: {
-        runtimeChunk: 'single',
-    },
 
     module:{
         rules: [
@@ -49,6 +47,9 @@ module.exports = {
 
             },
         ]
+    },
+    optimization: {
+        runtimeChunk: 'single',
     },
 
     plugins: [htmlwebpack, new MiniCssExtracPlugin()]
