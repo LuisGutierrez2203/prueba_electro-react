@@ -1,16 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { HashRouter, Route, Routes, Link } from "react-router-dom";
-
+import "./Base.css";
 
 export default function Base (props){
     return (
-        <div id = "entradas">
-            <h3>Ventada de entrada</h3>
-            {props.children}
-            
+        <React.Fragment>
+            <div id="Panel_laboratorio">
 
-        </div>
+            </div>
+
+            <div id="Panel_datos">
+                
+
+            </div>
+
+
+
+        </React.Fragment>
 
 
 

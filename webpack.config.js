@@ -57,6 +57,9 @@ module.exports = {
     },
     optimization: {
         runtimeChunk: 'single',
+        minimizer: [
+            new CssMinimizerPlugin(),
+        ]
     },
 
     plugins: [htmlwebpack, new MiniCssExtracPlugin()]

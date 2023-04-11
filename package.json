@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\"",
-    "build-webpack": "webpack --mode development",
+    "build-webpack": "webpack --mode production",
     "build": "npm run build-webpack && npm run start",
     "webpack-server": "webpack-dev-server --mode production"
   },
@@ -31,6 +31,7 @@
     "css-minimizer-webpack-plugin": "^5.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "file-loader": "^6.2.0",
+    "framer-motion": "^10.11.2",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.5",
