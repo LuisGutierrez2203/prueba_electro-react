@@ -1,7 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { HashRouter, Route, Routes, Link } from "react-router-dom";
-
+import "./Base.css";
 
 export default function Base (props){
     return (
@@ -14,12 +12,12 @@ export default function Base (props){
 
             </div>
             <div id = "PanelDatos">
-
+                {props.children}
             </div>
 
 
 
-            {props.children}
+            
         </div>
 
 

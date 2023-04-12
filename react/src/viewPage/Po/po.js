@@ -2,94 +2,81 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import  "./po.css";
-import Base from "../Base/Base.js";
+
+
+import CaidaLibre from "../CaidaLibre/CaidaLibre.js";
 
 
 const Home = () =>{
     return (
+
         <div>
-            <Link to= "/"><ul>Hola Home</ul></Link>
-            <Link to="/Number"><ul>Number</ul></Link>
-            <Link to="/Entradas"><ul>Entradas</ul></Link>
+            <nav className="nav flex-column">
+                <ul className="nav-link active" aria-current="page"  ><Link id = "linkf" to = "/">Caida Libre</Link></ul>
+                <ul className="nav-link active" aria-current="page"  ><Link id = "linkf" to = "/Carrusel">Armonico Simple</Link></ul>
 
+            </nav>
         </div>
-
-
-
-
     );
 }
 
+const Carrusel = () => {
+    return(
 
-const Number = () =>{
-    return (
-        <div>
-            <Link to= "/">Hola Home</Link>
-
-
-        </div>
-
-
-
-
-    );
-}
-
-const Entradas = () => {
-
-
-    return (
-        <div>
-            <Base>
-                <div>
-                    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                        <div className="container-fluid">
-                            <a className="navbar-brand" href="#">Navbar</a>
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarNav">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <a className="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Features</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Pricing</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link disabled">Disabled</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+        <React.Fragment>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Características</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-            </Base>
-            
+            </nav>
 
-        </div>        
+        </React.Fragment>
+
+
+
     )
+
+
+
+
+
 }
 
 
 
 export default function po (){
     return (
-        <div>
+        <React.Fragment>
             <HashRouter>
                 <Routes>
                     <Route path ="/" element={<Home />}/>
-                    <Route path ="Number" element = {<Number />}/>
-                    <Route path ="Entradas" element = {<Entradas />}/>
+                    <Route path ="/Carrusel" element={<CaidaLibre />}/>
+                    
 
                 </Routes>
 
 
             </HashRouter>
-        </div>
+        </React.Fragment>
 
     )
 

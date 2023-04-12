@@ -1,0 +1,23 @@
+#Laboratorios{
+    display: flex;
+    border: 1px solid red;
+
+
+}
+
+#PanelVidrio{
+    display: flex;
+    border: 1px solid blue;
+    
+
+
+}
+
+
+#PanelDatos{
+    border: 1px solid green;
+    display: flex;
+    
+
+}
+
