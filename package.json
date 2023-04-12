@@ -12,7 +12,7 @@
     "lint": "echo \"No linting configured\"",
     "build-webpack": "webpack --mode production",
     "build": "npm run build-webpack && npm run start",
-    "webpack-server": "webpack-dev-server --mode production"
+    "webpack-server": "webpack-dev-server --mode development"
   },
   "keywords": [],
   "author": {

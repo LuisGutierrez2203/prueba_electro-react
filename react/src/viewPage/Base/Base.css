@@ -1,6 +1,76 @@
-#vidrio {
+#Panel_principal{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    
 
-    background: red;
 
+    
 
 }
+
+#Panel_laboratorio{
+    width: 80%;
+    height: 55vh ;
+    margin: auto;
+    
+    
+
+    background: linear-gradient(
+        to top, 
+        rgb(196, 186, 186) 10%, 
+        rgb(168, 223, 211) 50%,
+        rgb(168, 180, 178));
+
+    border: 10px solid transparent;
+    border-image: linear-gradient(to top, #19191a, #b8b8b9 60%, rgb(54, 54, 54) 80%)  1;
+    
+}
+
+
+
+#Panel_datos{
+    width: 80%;
+    height: 45vh;
+    margin: auto;
+    padding: 0;
+    
+    border: 8px solid transparent;
+    border-image: linear-gradient(to bottom, #19191a, #b8b8b9, rgb(54, 54, 54))  1;
+    
+}
+
+#Car1, #Car2{
+    width: 80px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 500px){
+    #Car1, #Car2{
+        width: 40px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px){
+    #Car1, #Car2{
+        width: 50px;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
