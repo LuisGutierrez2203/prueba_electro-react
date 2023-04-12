@@ -2081,7 +2081,7 @@ var popper_lite_createPopper = /*#__PURE__*/popperGenerator({
 
 /***/ }),
 
-/***/ 470:
+/***/ 109:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -8640,19 +8640,50 @@ function usePrompt(_ref8) {
 
 //# sourceMappingURL=index.js.map
 
+;// CONCATENATED MODULE: ./react/src/assets/carro1.png
+/* harmony default export */ const carro1 = (__webpack_require__.p + "assets/carro1.png");
+;// CONCATENATED MODULE: ./react/src/assets/carro2.png
+/* harmony default export */ const carro2 = (__webpack_require__.p + "assets/carro2.png");
 ;// CONCATENATED MODULE: ./react/src/viewPage/Base/Base.js
 
 
-function Base(props) {
-  return /*#__PURE__*/React.createElement("div", {
-    id: "Laboratorio"
-  }, /*#__PURE__*/React.createElement("div", {
-    id: "PanelVidrio"
-  }), /*#__PURE__*/React.createElement("div", {
-    id: "PanelDatos"
-  }), props.children);
+
+
+function Base(frames, inputs) {
+  return /*#__PURE__*/react.createElement("div", {
+    id: "Panel_principal"
+  }, /*#__PURE__*/react.createElement("div", {
+    id: "Panel_laboratorio",
+    className: "row"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react.createElement("img", {
+    id: "Car1",
+    src: carro1
+  }), /*#__PURE__*/react.createElement("img", {
+    id: "Car1",
+    src: carro2
+  }))), /*#__PURE__*/react.createElement("div", {
+    id: "Panel_datos",
+    className: "row"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "col-7"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "col-1"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "col-4"
+  })));
+}
+;// CONCATENATED MODULE: ./react/src/viewPage/CaidaLibre/CaidaLibre.js
+
+
+
+
+function CaidaLibre() {
+  return /*#__PURE__*/React.createElement("h1", null, " Caida libre");
 }
 ;// CONCATENATED MODULE: ./react/src/viewPage/Po/po.js
+
 
 
 
@@ -8667,21 +8698,66 @@ var Home = function Home() {
   }, /*#__PURE__*/react.createElement(Link, {
     id: "linkf",
     to: "/"
-  }, "Caida Libre")), /*#__PURE__*/react.createElement("ul", {
+  }, "Home")), /*#__PURE__*/react.createElement("ul", {
     className: "nav-link active",
     "aria-current": "page"
   }, /*#__PURE__*/react.createElement(Link, {
     id: "linkf",
-    to: "/Carrusel"
-  }, "Armonico Simple"))));
+    to: "/CaidaLibre"
+  }, "Caida Libre"))));
 };
-function po() {
+var Carrusel = function Carrusel() {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("nav", {
+    "class": "navbar navbar-expand-lg navbar-light bg-light"
+  }, /*#__PURE__*/React.createElement("div", {
+    "class": "container-fluid"
+  }, /*#__PURE__*/React.createElement("a", {
+    "class": "navbar-brand",
+    href: "#"
+  }, "Navbar"), /*#__PURE__*/React.createElement("button", {
+    "class": "navbar-toggler",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#navbarNav",
+    "aria-controls": "navbarNav",
+    "aria-expanded": "false",
+    "aria-label": "Toggle navigation"
+  }, /*#__PURE__*/React.createElement("span", {
+    "class": "navbar-toggler-icon"
+  })), /*#__PURE__*/React.createElement("div", {
+    "class": "collapse navbar-collapse",
+    id: "navbarNav"
+  }, /*#__PURE__*/React.createElement("ul", {
+    "class": "navbar-nav"
+  }, /*#__PURE__*/React.createElement("li", {
+    "class": "nav-item"
+  }, /*#__PURE__*/React.createElement("a", {
+    "class": "nav-link active",
+    "aria-current": "page",
+    href: "#"
+  }, "Inicio")), /*#__PURE__*/React.createElement("li", {
+    "class": "nav-item"
+  }, /*#__PURE__*/React.createElement("a", {
+    "class": "nav-link",
+    href: "#"
+  }, "Caracter\xEDsticas")), /*#__PURE__*/React.createElement("li", {
+    "class": "nav-item"
+  }, /*#__PURE__*/React.createElement("a", {
+    "class": "nav-link",
+    href: "#"
+  }, "Precios")), /*#__PURE__*/React.createElement("li", {
+    "class": "nav-item"
+  }, /*#__PURE__*/React.createElement("a", {
+    "class": "nav-link disabled"
+  }, "Deshabilitado")))))));
+};
+function Po() {
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(HashRouter, null, /*#__PURE__*/react.createElement(Routes, null, /*#__PURE__*/react.createElement(Route, {
     path: "/",
     element: /*#__PURE__*/react.createElement(Home, null)
   }), /*#__PURE__*/react.createElement(Route, {
     path: "/Carrusel",
-    element: /*#__PURE__*/react.createElement(Home, null)
+    element: /*#__PURE__*/react.createElement(Base, null)
   }))));
 }
 ;// CONCATENATED MODULE: ./react/src/index.js
@@ -8692,7 +8768,7 @@ function po() {
 
 var ReactDOM = __webpack_require__(745);
 var root = ReactDOM.createRoot(document.getElementById("root"));
-root.render( /*#__PURE__*/react.createElement(po, null));
+root.render( /*#__PURE__*/react.createElement(Po, null));
 
 /***/ }),
 
@@ -9180,7 +9256,7 @@ if (true) {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, [712], () => (__webpack_exec__(470)));
+/******/ __webpack_require__.O(0, [712], () => (__webpack_exec__(109)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

@@ -5,6 +5,9 @@ import  "./po.css";
 
 
 import CaidaLibre from "../CaidaLibre/CaidaLibre.js";
+import Base from "../Base/Base.js";
+
+
 
 
 const Home = () =>{
@@ -12,8 +15,8 @@ const Home = () =>{
 
         <div>
             <nav className="nav flex-column">
-                <ul className="nav-link active" aria-current="page"  ><Link id = "linkf" to = "/">Caida Libre</Link></ul>
-                <ul className="nav-link active" aria-current="page"  ><Link id = "linkf" to = "/Carrusel">Armonico Simple</Link></ul>
+                <ul className="nav-link active" aria-current="page"  ><Link id = "linkf" to = "/">Home</Link></ul>
+                <ul className="nav-link active" aria-current="page"  ><Link id = "linkf" to = "/CaidaLibre">Caida Libre</Link></ul>
 
             </nav>
         </div>
@@ -63,13 +66,13 @@ const Carrusel = () => {
 
 
 
-export default function po (){
+export default function Po (){
     return (
         <React.Fragment>
             <HashRouter>
                 <Routes>
                     <Route path ="/" element={<Home />}/>
-                    <Route path ="/Carrusel" element={<CaidaLibre />}/>
+                    <Route path ="/CaidaLibre" element={<Base />}/>
                     
 
                 </Routes>
